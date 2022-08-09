@@ -81,7 +81,51 @@ cópias redudantes desses dados são armazenadas no conjunto de réplicas.
 </b></details>
 </b></details>
 
+##
 
+<details>
+<summary>Comandos</summary><br><b>
+
+<details>
+<summary>show dbs</summary><br><b>
+show dbs mostra a lista de bancos de dados que estão no cluster.
+</b></details>
+</b></details>
+
+<details>
+<summary>use</summary><br><b>
+Para indicar qual banco de dados usar, utilizamos o comando
+use + Nome_Banco_Dados. Exemplo, use sample_training dessa forma
+você tera acesso aquele banco.
+</b></details>
+</b></details>
+
+<details>
+<summary>show collections</summary><br><b>
+Para visualizar as coleções no banco de dados, utilizamos o comando
+show collections.
+</b></details>
+</b></details>
+
+<details>
+<summary>find()</summary><br><b>
+Para procurar um dado utilizamos o comando find().
+exemplo: db.zips.find( { "state": "NY"} ), neste exemplo
+utilizamos objeto db que está apontando para o banco que dados,
+sendo zips a collection e find() o comando de busca, o que se encontra
+dentro de find() são document representado pelas { } e "state": "NY" o filtro
+de consulta em JSON.
+</b></details>
+</b></details>
+
+<details>
+<summary>count</summary><br><b>
+Para visualizar a quantidade de consultas utilizamos o comando .count() ao final de uma consulta, exemplo:
+db.zips.find({ "state": "NY"}).count() 
+Desta forma ele nos retornara o numero de documentos que se encaixam nesta
+consulta.
+</b></details>
+</b></details>
 
 
 
